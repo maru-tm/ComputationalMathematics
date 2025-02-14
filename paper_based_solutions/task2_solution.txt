@@ -1,0 +1,7 @@
+Bisection Method:
+Root: 2.23607, Iterations: 19
+
+Secant Method:
+Root: 2.23607, Iterations: 5
+
+Relative Error: 0.00001%
