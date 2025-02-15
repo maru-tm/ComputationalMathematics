@@ -8,7 +8,7 @@ class MainApp(tk.Tk):
         super().__init__()
         self.title("Computational Mathematics Project - Variant 1")
         self.geometry("600x800")
-        self.configure(bg="#f0f8ff")  # Light blue background for a soothing look
+        self.configure(bg="#e6f7ff")  # Light blue background for a soothing look
 
         # Project and course information
         tk.Label(self, text="Course: Computational Mathematics", font=("Arial", 16, "bold"), bg="#f0f8ff", fg="#2b3d52").pack(pady=5)
@@ -39,7 +39,7 @@ class MainApp(tk.Tk):
             "Task 4: Iterative Method for Matrix Inversion",
             "Task 5: Linear Curve Fitting",
             "Task 6: Newton’s Forward Interpolation Formula",
-            "Task 7: First Derivative Using Newton’s Forward Difference Formula",
+            "Task 7: First Derivative Using Newton’s Forward Difference",
             "Task 8: Trapezoidal Rule"
         ]
 
@@ -50,10 +50,12 @@ class MainApp(tk.Tk):
                 text=task,
                 width=50,
                 font=("Arial", 12),
-                bg="#dceefb",  # Light blue button
-                fg="#102a43",  # Dark blue text
-                activebackground="#b3d4f8",  # Slightly darker on hover
-                activeforeground="#102a43",  # Same text color on hover
+                bg="#ccf2ff",  # Light blue button
+                fg="#003d66",  # Darker text
+                activebackground="#99e6ff",  # Lighter blue on hover
+                activeforeground="#002b4d",  # Darker text on hover
+                bd=2,
+                relief="solid",
                 command=lambda num=i: self.run_task(num)
             )
             btn.pack(pady=5)
@@ -64,10 +66,12 @@ class MainApp(tk.Tk):
             text="Exit",
             width=50,
             font=("Arial", 12, "bold"),
-            bg="#f05454",  # Red background for exit
+            bg="#ff6666",  # Red background for exit
             fg="white",
-            activebackground="#d43d3d",
+            activebackground="#ff3333",  # Darker red on hover
             activeforeground="white",
+            bd=2,
+            relief="solid",
             command=self.quit
         ).pack(pady=10)
 
